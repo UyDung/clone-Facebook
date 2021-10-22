@@ -1,0 +1,94 @@
+.notification {
+    background-color: #fff;
+    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 360px;
+    height: 634px;
+    overflow-y: hidden;
+    padding: 1rem;
+    letter-spacing: 0.01rem;
+    margin-right: 5px 8px 0 0;
+
+    position: absolute;
+    top: 56px;
+    right: 2rem;
+    z-index: 9999;
+}
+
+.notification:hover {
+    overflow-y: scroll;
+}
+
+.notification img {
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+}
+
+.notification li {
+    display: flex;
+    padding: 0.2rem;
+    gap: 0.5rem;
+    font-size: 0.93rem;
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: 0.125rem;
+    border-radius: 5px;
+    cursor: pointer;
+
+   
+}
+
+.notification li:hover {
+    background-color: #ecebeb;
+}
+
+.title,
+.new {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.notification h3 {
+    margin-bottom: 1rem;
+}
+
+.title > img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 0.25rem;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.title > img:hover {
+    background-color: #ecebeb;
+}
+
+.new > a {
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.new > a:focus,
+.new > a:active,
+.new > a:visited {
+    color: blue;
+}
+
+.new > a:hover {
+    background-color: #ecebeb;
+    columns: blue;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.time {
+    font-size: 95%;
+}

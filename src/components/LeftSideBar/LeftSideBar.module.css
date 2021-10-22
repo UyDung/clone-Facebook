@@ -1,0 +1,102 @@
+.leftsidebar{
+    position: fixed;
+    top: 56px;
+    left: 0;
+    width: 345px;
+    height: 100vh;
+    overflow: hidden;
+    padding: 1rem 0 1rem 0.5rem;    
+}
+
+.leftsidebar:hover {
+    overflow-y: scroll;
+}
+
+.leftsidebar img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+.nav-links {
+    display: flex;
+    flex-direction: column;     
+    transition: all .1s ease-out;
+}
+
+ 
+
+.leftsidebar a {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    
+    border-radius: 8px;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: #111;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.leftsidebar a:hover {
+    background-color: #ebebeb;
+}
+
+.container:nth-child(2) {
+    border-top: 1px solid #cdcdcd;
+    padding: 1rem 0 1rem 0.5rem;
+    margin: 1rem 0;
+}
+
+.container .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shortcuts .title > a {
+    color: blue;
+    font-weight: normal;
+}
+
+.shortcuts img {
+    width: 42px;
+    height: 42px;
+    border-radius: 5px;
+    background-color: #ebebeb;
+    
+}
+
+.see-more {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.65rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.see-more:hover {
+    background-color: #ebebeb;
+}
+
+.see-more > .img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #cdcdcd;
+    padding: 0.25rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 

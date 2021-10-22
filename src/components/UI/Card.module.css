@@ -1,0 +1,23 @@
+.card {
+    border-radius: 10px;
+    width: 590px;
+    height: 90vh;
+    background-color: #f7f8fa;
+    padding: 0.5rem 0 0 1rem;    
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;    
+    /* overflow-x: hidden; */
+    overscroll-behavior-y: contain;
+
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.2);
+    
+    position: fixed;   
+    right: 2rem;
+    top: 52px;
+    z-index: 9999;
+}
+
+.card h1 {
+    position: sticky;
+}

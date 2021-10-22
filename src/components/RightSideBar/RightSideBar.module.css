@@ -1,0 +1,17 @@
+.rightsidebar {
+    position: fixed;
+    top: 56px;
+    right: 0;
+    width: 360px;
+    padding: 1rem;
+}
+
+.rightsidebar h3:first-child {
+    border-bottom: 1px solid #cdcdcd;
+  
+}
+
+.rightsidebar h3 {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
