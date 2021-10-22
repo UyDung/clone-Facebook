@@ -3,7 +3,7 @@ const MessageIcon = () => {
         <svg
             viewBox="0 0 28 28"
             alt=""
-            class="a8c37x1j ms05siws hwsy1cff b7h9ocf4 fzdkajry"
+            className="a8c37x1j ms05siws hwsy1cff b7h9ocf4 fzdkajry"
             height="20"
             width="20"
         >

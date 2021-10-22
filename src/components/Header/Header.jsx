@@ -16,8 +16,6 @@ import NotificationIcon from "../UI/NotificationIcon";
 import AccountIcon from "../UI/AccountIcon";
 import HeaderSearchButton from "./HeaderSearchButton";
 
-
-
 import Menu from "./Menu";
 import Messenger from "./Messenger";
 import Notification from "./Notification";
@@ -35,22 +33,19 @@ const dropDownReducer = (state, action) => {
     switch (action.type) {
         case "MENU":
             return { ...initialDropDown, menu: !state.menu, modal: true };
-            break;
+
         case "MSG":
             return { ...initialDropDown, messenger: !state.messenger, modal: true };
-            break;
+
         case "NOTI":
             return { ...initialDropDown, notification: !state.notification, modal: true };
-            break;
+
         case "ACC":
             return { ...initialDropDown, account: !state.account, modal: true };
-            break;
-        case "STOP":
-            return initialDropDown;
-            break;
-    }
 
-    return initialDropDown;
+        default:
+            return initialDropDown;
+    }
 };
 
 function useOutsideAlerter(ref) {
@@ -75,11 +70,10 @@ function useOutsideAlerter(ref) {
 const Header = (props) => {
     const [dropdownState, dispatchDropdown] = useReducer(dropDownReducer, initialDropDown);
     const { modal, menu, messenger, notification, account } = dropdownState;
-   
+
     // Click outside to close dropdown menu => chưa thành công
-    const menuRef = useRef();    
+    const menuRef = useRef();
     useOutsideAlerter(menuRef);
-    
 
     const menuToggleHandler = () => {
         dispatchDropdown({ type: "MENU" });

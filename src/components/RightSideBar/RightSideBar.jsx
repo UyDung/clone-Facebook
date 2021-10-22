@@ -5,7 +5,7 @@ const RightSideBar = () => {
         <div className={classes.rightsidebar}>
             <h3>Sponsored</h3>
             <h3>Group Converstations</h3>
-            <a className={classes.item}>
+            <a href="test" className={classes.item}>
                 <img src="" alt="" />
                 <span>Create New Group</span>
             </a>
